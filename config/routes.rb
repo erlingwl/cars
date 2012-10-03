@@ -1,5 +1,7 @@
 Cars::Application.routes.draw do
-  get "cars/index"
+  resources :movies
+
+  resources :cars, only: [:index, :new, :create, :edit, :update]
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
