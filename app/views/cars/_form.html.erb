@@ -1,0 +1,14 @@
+<%= form_for @car do |form| %>
+  <p>
+    <%= form.label :make %>
+    <%= form.text_field :make %>
+  </p>
+  <p>
+    <%= form.label :model %>
+    <%= form.text_field :model %>
+  </p>
+  <p>
+    <%= form.submit %>
+  </p>  
+<% end %>
+<%= link_to "Tilbake", cars_path %>
